@@ -1,0 +1,34 @@
+{
+  "title": "User",
+  "required": ["email", "name", "accountType"],
+  "properties": {
+    "_id": {
+      "bsonType": "objectId"
+    },
+    "email": {
+      "bsonType": "string"
+    },
+    "name": {
+      "bsonType": "string"
+    },
+    "accountType": {
+      "enum": ["demo", "real"]
+    },
+    "balance": {
+      "bsonType": "number",
+      "minimum": 0
+    },
+    "verificationStatus": {
+      "enum": ["unverified", "pending", "verified", "rejected"]
+    },
+    "isAdmin": {
+      "bsonType": "bool"
+    },
+    "createdAt": {
+      "bsonType": "date"
+    },
+    "lastLogin": {
+      "bsonType": "date"
+    }
+  }
+}

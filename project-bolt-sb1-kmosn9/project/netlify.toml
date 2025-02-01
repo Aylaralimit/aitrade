@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  VITE_FIREBASE_API_KEY = "AIzaSyCSSHxm4ETNf3fa38w8FO5tcWu9GAzWSR0"
+  VITE_FIREBASE_AUTH_DOMAIN = "finance-api-4da78.firebaseapp.com"
+  VITE_FIREBASE_DATABASE_URL = "https://finance-api-4da78-default-rtdb.firebaseio.com"
+  VITE_FIREBASE_PROJECT_ID = "finance-api-4da78"
+  VITE_FIREBASE_STORAGE_BUCKET = "finance-api-4da78.firebasestorage.app"
+  VITE_FIREBASE_MESSAGING_SENDER_ID = "274132877910"
+  VITE_FIREBASE_APP_ID = "1:274132877910:web:b11c9d419726ca8bd2f1f7"
+  VITE_FIREBASE_MEASUREMENT_ID = "G-PJQ4F2KD46"
